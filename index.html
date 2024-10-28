@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kokise Online Store</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            text-align: center; /* Center align all text */
-        }
-        section {
-            margin: 20px 0; /* Add spacing between sections */
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -32,29 +24,45 @@
     <main>
         <h2>Welcome to Kokise Online Store</h2>
         <p>Your one-stop shop for all your needs!</p>
-        <section class="intro">
-            <h3>Discover Our Collection</h3>
-            <p>At Kokise Online Store, we believe shopping should be an enjoyable experience. Explore our wide range of products, from electronics to fashion, all curated to meet your needs and preferences.</p>
+
+        <!-- New Catchy Content -->
+        <section class="highlights">
+            <h3>Why Choose Us?</h3>
+            <p>At Kokise Online Store, we believe in providing quality products at unbeatable prices. Whether you're looking for automotive parts, tools, or household items, we've got you covered!</p>
+            <ul>
+                <li>✅ **Quality Assurance**: All our products are tested for quality and durability.</li>
+                <li>✅ **Fast Delivery**: Get your orders delivered to your doorstep in no time.</li>
+                <li>✅ **Customer Satisfaction**: We prioritize our customers and strive to meet their needs.</li>
+            </ul>
         </section>
-        
-        <section class="promotions">
-            <h3>Special Offers</h3>
-            <p>Don’t miss our exclusive discounts and promotions! Sign up for our newsletter to stay updated on the latest deals and new arrivals. Enjoy up to <strong>30% off</strong> on your first purchase!</p>
+
+        <section class="featured-products">
+            <h3>Featured Products</h3>
+            <p>Check out our latest arrivals and best sellers that our customers love:</p>
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/image1.jpg" alt="Image 1" class="active">
+                    <img src="images/image2.jpg" alt="Image 2">
+                    <img src="images/image3.jpg" alt="Image 3">
+                    <img src="images/image4.jpg" alt="Image 4">
+                </div>
+            </div>
         </section>
-        
-        <section class="customer-focus">
-            <h3>Customer Satisfaction Guaranteed</h3>
-            <p>Your satisfaction is our priority. We provide fast shipping, easy returns, and dedicated customer service to ensure your shopping experience is smooth and enjoyable.</p>
-        </section>
-        
-        <section class="call-to-action">
-            <h3>Shop Now!</h3>
-            <p>Browse our <a href="products.html">Products</a> page to find the best deals. Join our community of happy customers today!</p>
+
+        <section class="newsletter">
+            <h3>Stay Updated!</h3>
+            <p>Sign up for our newsletter to receive exclusive offers and the latest news from Kokise Online Store.</p>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokise Online Store - Motor Vehicle Parts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kokise Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Motor Vehicle Parts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://www.google.com/imgres?q=brake%20pads%20unlicensed%20images&imgurl=https%3A%2F%2Fmedia.asplpro.com%2F61307-thickbox_default%2F4-rear-brake-pads-microcar-mgo-1-2-m8-f8c-and-ligier-ixo-1st-assembly-due.jpg&imgrefurl=https%3A%2F%2Fwww.asplpro.com%2Fen%2Fplaquettes-microcar%2F750-4-rear-brake-pads-microcar-mgo-1-2-m8-f8c-and-ligier-ixo-1st-assembly-due-2000000021669.html&docid=P_77p19ff8DlxM&tbnid=7VMi-SE3Xnex6M&vet=12ahUKEwjc2sunlLGJAxXTgv0HHSENKFoQM3oECBoQAA..i&w=800&h=800&hcb=2&itg=1&ved=2ahUKEwjc2sunlLGJAxXTgv0HHSENKFoQM3oECBoQAA" alt="Brake Pads">
+                <h3>Brake Pads</h3>
+                <p>Price: KSh 3,000</p>
+                <button onclick="addToCart('Brake Pads')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0102/4572/0795/products/oil_filter.jpg?v=1635756145" alt="Oil Filter">
+                <h3>Oil Filter</h3>
+                <p>Price: KSh 1,500</p>
+                <button onclick="addToCart('Oil Filter')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0102/4572/0795/products/air_filter.jpg?v=1635756145" alt="Air Filter">
+                <h3>Air Filter</h3>
+                <p>Price: KSh 800</p>
+                <button onclick="addToCart('Air Filter')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0102/4572/0795/products/car_battery.jpg?v=1635756145" alt="Car Battery">
+                <h3>Car Battery</h3>
+                <p>Price: KSh 10,000</p>
+                <button onclick="addToCart('Car Battery')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://cdn.shopify.com/s/files/1/0102/4572/0795/products/starter_motor.jpg?v=1635756145" alt="Starter Motor">
+                <h3>Starter Motor</h3>
+                <p>Price: KSh 5,500</p>
+                <button onclick="addToCart('Starter Motor')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>

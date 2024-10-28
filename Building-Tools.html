@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokise Online Store - Building Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kokise Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Building Tools</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://example.com/hammer.jpg" alt="Hammer">
+                <h3>Hammer</h3>
+                <p>Price: KSh 300</p>
+                <button onclick="addToCart('Hammer')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/saw.jpg" alt="Saw">
+                <h3>Hand Saw</h3>
+                <p>Price: KSh 500</p>
+                <button onclick="addToCart('Hand Saw')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/measuring-tape.jpg" alt="Measuring Tape">
+                <h3>Measuring Tape</h3>
+                <p>Price: KSh 200</p>
+                <button onclick="addToCart('Measuring Tape')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/chisel.jpg" alt="Chisel">
+                <h3>Chisel</h3>
+                <p>Price: KSh 250</p>
+                <button onclick="addToCart('Chisel')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/level.jpg" alt="Spirit Level">
+                <h3>Spirit Level</h3>
+                <p>Price: KSh 350</p>
+                <button onclick="addToCart('Spirit Level')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>

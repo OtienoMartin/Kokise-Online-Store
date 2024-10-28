@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokise Online Store - Motorcycle Parts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kokise Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Motorcycle Parts</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://example.com/motorcycle-brake-pad.jpg" alt="Motorcycle Brake Pads">
+                <h3>Motorcycle Brake Pads</h3>
+                <p>Price: KSh 1,200</p>
+                <button onclick="addToCart('Motorcycle Brake Pads')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/motorcycle-chain.jpg" alt="Motorcycle Chain">
+                <h3>Motorcycle Chain</h3>
+                <p>Price: KSh 1,800</p>
+                <button onclick="addToCart('Motorcycle Chain')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/motorcycle-battery.jpg" alt="Motorcycle Battery">
+                <h3>Motorcycle Battery</h3>
+                <p>Price: KSh 3,500</p>
+                <button onclick="addToCart('Motorcycle Battery')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/helmet.jpg" alt="Helmet">
+                <h3>Helmet</h3>
+                <p>Price: KSh 2,000</p>
+                <button onclick="addToCart('Helmet')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/motorcycle-oil-filter.jpg" alt="Oil Filter">
+                <h3>Oil Filter</h3>
+                <p>Price: KSh 500</p>
+                <button onclick="addToCart('Oil Filter')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>

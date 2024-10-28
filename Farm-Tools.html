@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokise Online Store - Farm Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kokise Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Farm Tools</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://example.com/hoe.jpg" alt="Hoe">
+                <h3>Hoe</h3>
+                <p>Price: KSh 500</p>
+                <button onclick="addToCart('Hoe')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/shovel.jpg" alt="Shovel">
+                <h3>Shovel</h3>
+                <p>Price: KSh 700</p>
+                <button onclick="addToCart('Shovel')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/rake.jpg" alt="Rake">
+                <h3>Rake</h3>
+                <p>Price: KSh 400</p>
+                <button onclick="addToCart('Rake')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/sickle.jpg" alt="Sickle">
+                <h3>Sickle</h3>
+                <p>Price: KSh 250</p>
+                <button onclick="addToCart('Sickle')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/wheelbarrow.jpg" alt="Wheelbarrow">
+                <h3>Wheelbarrow</h3>
+                <p>Price: KSh 3,000</p>
+                <button onclick="addToCart('Wheelbarrow')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>

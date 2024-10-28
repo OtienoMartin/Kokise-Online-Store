@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kokise Online Store - Garage Tools</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Kokise Online Store</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Garage Tools</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="https://example.com/wrench.jpg" alt="Wrench Set">
+                <h3>Wrench Set</h3>
+                <p>Price: KSh 1,500</p>
+                <button onclick="addToCart('Wrench Set')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/screwdriver.jpg" alt="Screwdriver Set">
+                <h3>Screwdriver Set</h3>
+                <p>Price: KSh 800</p>
+                <button onclick="addToCart('Screwdriver Set')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/jack.jpg" alt="Car Jack">
+                <h3>Car Jack</h3>
+                <p>Price: KSh 3,000</p>
+                <button onclick="addToCart('Car Jack')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/pliers.jpg" alt="Pliers Set">
+                <h3>Pliers Set</h3>
+                <p>Price: KSh 1,200</p>
+                <button onclick="addToCart('Pliers Set')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="https://example.com/hammer.jpg" alt="Hammer">
+                <h3>Hammer</h3>
+                <p>Price: KSh 400</p>
+                <button onclick="addToCart('Hammer')">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Kokise Online Store. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + ' has been added to your cart!');
+        }
+    </script>
+</body>
+</html>

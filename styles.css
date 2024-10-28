@@ -1,74 +1,148 @@
-body {
-    font-family: Arial, sans-serif;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
 }
 
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    position: relative; /* For absolute positioning of the carousel */
+}
+
+/* Header Styles */
 header {
-    background: saddlebrown; /* Change header background color */
-    color: #fff;
+    background-color: #4e4e4e; /* Dark background for the header */
+    color: white;
     padding: 10px 0;
+}
+
+.logo h1 {
     text-align: center;
 }
 
+nav {
+    text-align: center;
+    margin: 10px 0;
+}
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+    display: inline; /* Horizontal list */
+    margin: 0 15px; /* Spacing between items */
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.section-content {
-    border: 2px solid saddlebrown; /* Add border to each section */
-    padding: 20px; /* Space inside the section border */
-    margin: 20px; /* Space around the section */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+/* Main Content Styles */
+main {
+    text-align: center; /* Center align all main content */
+    padding: 20px;
 }
 
-.section-content:hover {
-    background-color: #d2b48c; /* Change background color on hover */
+/* Carousel Styles */
+.carousel {
+    position: relative; /* Position relative to the main content */
+    margin: 20px 0; /* Add margin for spacing */
+    width: 100%; /* Full width */
+    overflow: hidden; /* Hide overflow for sliding effect */
 }
 
+.carousel-images {
+    display: flex; /* Arrange images in a row */
+    transition: transform 0.5s ease; /* Smooth transition for slides */
+}
+
+.carousel-images img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Featured Products Styles */
+.featured-products {
+    display: flex; /* Use flexbox to arrange items in a row */
+    justify-content: center; /* Center align items horizontally */
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 20px 0; /* Add margin around the featured products */
+}
+
+.featured-products li {
+    margin: 0 15px; /* Add space between items */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #4e4e4e; /* Dark background for the footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* For footer */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Product Section Styles */
 .product-grid {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow wrapping to next line */
+    justify-content: center; /* Center products */
     margin: 20px 0;
 }
 
 .product-card {
-    background: #fff;
+    background-color: #fff;
     border: 1px solid #ddd;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 15px;
     margin: 10px;
-    width: 200px;
-    text-align: center;
+    width: 200px; /* Fixed width for product cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align product details */
+}
+
+.product-card img {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 .product-card button {
-    background: saddlebrown; /* Button background color */
-    color: #fff; /* Button text color */
+    background-color: #007bff; /* Button color */
+    color: white;
     border: none;
-    padding: 5px 10px;
+    padding: 10px;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
 }
 
 .product-card button:hover {
-    background: #8b4513; /* Darker shade for hover effect */
+    background-color: #0056b3; /* Darker shade on hover */
 }
 
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background: saddlebrown; /* Change footer background color */
-    color: #fff;
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .product-grid {
+        flex-direction: column; /* Stack products on small screens */
+        align-items: center; /* Center align items */
+    }
+    
+    .carousel {
+        width: 100%; /* Full width on smaller screens */
+        position: relative; /* Change to relative positioning */
+    }
+    
+    .carousel-images img {
+        width: 100%; /* Responsive images */
+    }
 }
