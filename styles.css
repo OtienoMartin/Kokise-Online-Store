@@ -27,6 +27,17 @@ nav a {
     text-decoration: none;
 }
 
+.section-content {
+    border: 2px solid saddlebrown; /* Add border to each section */
+    padding: 20px; /* Space inside the section border */
+    margin: 20px; /* Space around the section */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.section-content:hover {
+    background-color: #d2b48c; /* Change background color on hover */
+}
+
 .product-grid {
     display: flex;
     justify-content: space-around;
