@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    background: #333;
+    background: saddlebrown; /* Change header background color */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -43,9 +43,21 @@ nav a {
     text-align: center;
 }
 
+.product-card button {
+    background: saddlebrown; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product-card button:hover {
+    background: #8b4513; /* Darker shade for hover effect */
+}
+
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #333;
+    background: saddlebrown; /* Change footer background color */
     color: #fff;
 }
